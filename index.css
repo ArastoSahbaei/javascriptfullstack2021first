@@ -1,0 +1,140 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+.one {
+	background-color: red;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	grid-column: 1/6;
+	grid-row: 1/6;
+	animation: changeBackground 7s infinite ease-in-out;
+}
+
+.videoOne {
+	grid-column: 1/11;
+	grid-row: 1/11;
+	align-self: center;
+	justify-self: center;
+}
+
+.beirut {
+	grid-column: 1/11;
+	grid-row: 1/1;
+	align-self: center;
+	justify-self: center;
+}
+
+.two {
+	background-color: blue;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	grid-column: 6/11;
+	grid-row: 1/6;
+	animation: changeBackground2 7s infinite ease-in-out;
+}
+
+iframe {
+	grid-column: 1/11;
+	grid-row: 1/11;
+	align-self: center;
+	justify-self: center;
+}
+
+h1 {
+	color: white;
+	grid-column: 1/11;
+	grid-row: 1/1;
+	align-self: center;
+	justify-self: center;
+}
+
+.three {
+	background-color: purple;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	grid-column: 1/6;
+	grid-row: 6/11;
+	animation: changeBackground3 7s infinite ease-in-out;
+}
+
+.four {
+	background-color: green;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	grid-column: 6/11;
+	grid-row: 6/11;
+	animation: changeBackground4 7s infinite ease-in-out;
+}
+
+@media only screen and (max-width: 1250px) {
+	.one {
+		grid-column: 1/11;
+		grid-row: 1/1;
+	}
+
+	.two {
+		grid-column: 1/11;
+		grid-row: 2/2;
+	}
+
+	.three {
+		grid-column: 1/11;
+		grid-row: 3/3;
+	}
+
+	.four {
+		grid-column: 1/11;
+		grid-row: 4/4;
+	}
+}
+
+@keyframes changeBackground {
+	0% {
+		background-color: blue;
+	}
+
+	100% {
+		background-color: orange;
+	}
+}
+
+@keyframes changeBackground2 {
+	0% {
+		background-color: red;
+	}
+
+	100% {
+		background-color: green;
+	}
+}
+
+@keyframes changeBackground3 {
+	0% {
+		background-color: yellow;
+	}
+
+	100% {
+		background-color: purple;
+	}
+}
+
+@keyframes changeBackground4 {
+	0% {
+		background-color: saddlebrown;
+	}
+
+	100% {
+		background-color: tomato;
+	}
+}
